@@ -1,11 +1,12 @@
-#include "mainwindow.h"
+#include "phonebook.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
+    QApplication program(argc, argv);
+    program.setStyle("fusion");
+    Phonebook w;
     w.show();
 
-    return a.exec();
+    return program.exec();
 }
